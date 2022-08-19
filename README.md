@@ -32,14 +32,17 @@ You can omit ".exe" (it is used by default). You can omit ".js" (it is used by d
   }
 ```
 
+Remember to restart server after you change the code.
+
 Now we can see in console that every time browser requests http://localhost:8080/ it will emit 'request' event. Pay attention to the console.count() method. It is a counter that counts how many times it was called. And you have two consoles now - one in the browser and one in the terminal or debugger console of your editor.
 
 6. Now we need it (server) to answer to our request. There is a standard signature for a handleRequest() function.
 
 ```javascript
   function handleRequest(request, response) {
-    res.end('Hello World!');
+    response.end('Hello World!');
   }
 ```
 
+`response.end()` is a method that ends the response. It sends passed argument (string) to the client.
 Now browser will finally get an answer. Remember to restart server after you change the code.
