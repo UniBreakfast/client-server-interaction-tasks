@@ -1,4 +1,4 @@
-# Tasks to learn Client-Server interaction
+# [Tasks to learn Client-Server interaction](https://github.com/UniBreakfast/client-server-interaction-tasks)
 
 1. Try to open page with url: http://localhost:8080/ - it shouldn't work, because there is no server running at that address/port.
    
